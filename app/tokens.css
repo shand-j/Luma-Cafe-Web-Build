@@ -1,0 +1,73 @@
+/* Luma Cafe — design tokens (Hallmark custom theme, tuned)
+ * vibe: "gold leaf on warm sand, café quiet"
+ * paper + accent sampled from the brand's Instagram assets
+ */
+
+:root {
+  /* ---- colour ---- */
+  --color-paper:      oklch(82.8% 0.045 68);   /* brand sand — sampled from story tiles */
+  --color-paper-2:    oklch(79.0% 0.040 68);   /* one elevation step down */
+  --color-paper-3:    oklch(87.5% 0.036 71);   /* cream lift — medallion tone */
+  --color-ink:        oklch(26.0% 0.018 60);   /* espresso */
+  --color-ink-2:      oklch(38.0% 0.016 62);   /* secondary text (large) */
+  --color-muted:      oklch(35.5% 0.015 60);   /* small muted text — 4.5:1 on paper */
+  --color-rule:       oklch(66.0% 0.028 68);   /* hairlines */
+  --color-rule-2:     oklch(74.0% 0.032 68);   /* secondary hairlines */
+  --color-accent:     oklch(48.0% 0.105 70);   /* antique gold — deep, display-safe */
+  --color-accent-2:   oklch(60.0% 0.085 71);   /* bright metal gold — decorative strokes only */
+  --color-accent-ink: oklch(88.0% 0.030 72);   /* text placed on accent fill */
+  --color-focus:      oklch(44.0% 0.150 68);   /* focus ring — ≥3:1 on paper */
+  --color-cream:      oklch(92.0% 0.028 75);   /* light text on photography */
+  --color-shadow:     oklch(26.0% 0.018 60 / 0.18); /* medallion lift */
+  --color-ink-deep:   oklch(24.0% 0.020 60);   /* dark inversion — visit section */
+  --color-cream-2:    oklch(80.0% 0.030 72);   /* secondary text on dark */
+  --color-rule-dark:  oklch(46.0% 0.028 66);   /* hairlines on dark */
+
+  /* ---- typography ---- */
+  --font-display: "Cormorant Garamond", "EB Garamond", ui-serif, Georgia, serif;
+  --font-body:    "EB Garamond", ui-serif, Georgia, serif;
+  --font-script:  "Bonheur Royale", "Cormorant Garamond", cursive;
+
+  --text-xs:   0.72rem;
+  --text-sm:   0.9rem;
+  --text-base: 1.125rem;    /* 18px — Garamond runs small */
+  --text-md:   1.406rem;
+  --text-lg:   1.758rem;
+  --text-xl:   2.198rem;
+  --text-2xl:  2.747rem;
+  --text-3xl:  3.434rem;
+  --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-big:     clamp(2.6rem, 8.5vw + 0.25rem, 6.25rem);
+  --text-hero:    clamp(4.25rem, 15.5vw + 0.5rem, 13.5rem);
+
+  /* ---- space (4pt) ---- */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --page-gutter: clamp(1.25rem, 5vw, 4.5rem);
+
+  /* ---- rules / radius ---- */
+  --rule-hair:  1px;
+  --rule-thick: 3px;
+  --radius-sm:  2px;
+
+  /* ---- motion ---- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  /* ---- z ---- */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-grain: 500;
+}
